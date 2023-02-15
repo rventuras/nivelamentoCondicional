@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+int main (){
+	setlocale(LC_ALL,"");
+	float notaF, totalP, aulaM, mediaAula;
+	printf ("Insira sua nota final: ");
+	scanf ("%f", &notaF);
+	printf ("Insira o total de presença: ");
+	scanf ("%f", &totalP);
+	printf ("Insira o total de aulas: ");
+	scanf ("%f", &aulaM);
+	mediaAula = aulaM * 0.75;
+	printf ("Nota final é %.2f", notaF);
+	printf ("Total de presenças é %.f", totalP);
+	if (totalP >= mediaAula && notaF >= 6)
+	{
+		printf ("\nAprovado!");
+	
+	}
+	else{
+		printf ("\nReprovado!");
+	}
+	
+
+	
+}
