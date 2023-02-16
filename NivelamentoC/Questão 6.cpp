@@ -1,0 +1,22 @@
+//Rodrigo Boaventura da Silva
+//Questão 6
+
+#include <stdio.h>
+#include <locale.h>
+int main (){
+	setlocale(LC_ALL,"");
+	int num;
+	printf ("Insira um número: ");
+	scanf ("%d", &num);
+	if (num > 10){
+		printf ("Número é maior que 10");
+		
+	}
+	else if (num < 10){
+		printf ("Número é menor que 10");
+	}
+	else if (num = 10){
+		printf ("Você acertou!");
+	}
+	
+}
